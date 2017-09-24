@@ -5,6 +5,8 @@ Nhập lệnh vào terminal, tên migration sẽ là hành động mà ta muốn
 
 `php artisan make:migration create_tasks_table`
 
+Nếu như nhập lệnh xong mà gặp lỗi như `failed to open stream`, ta có thể load lại các file bằng cách nhập lệnh `composer dump-autoload`
+
 Sau khi nhập lệnh, một file migration mới sẽ được tạo trong đường dẫn `database/migrations`. Tuy nhiên, file này chưa chứa bất kì function nào để tạo bảng. php artisan có hỗ trợ sẵn một tùy chọn giúp tạo ra ngay function tạo bảng khi tạo migration.
 
 `php artisan make:migration create_tasks_table --create=tasks`
